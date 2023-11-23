@@ -48,17 +48,33 @@
 // console.log(findStudent("ismet"));
 // console.log(findStudent("Alihan"));
 
-const prices = [250, 150, 300, 500];
+// const prices = [250, 150, 300, 500];
 
-for (let i = 0; i < prices.length; i++) {
-  console.log(prices[i]);
-}
-console.log("*********");
-prices.forEach((p) => console.log(p));
-console.log("*********");
-prices.forEach((p, i) => console.log("Deger:", p, "INDIS:", i));
-console.log("*********");
+// for (let i = 0; i < prices.length; i++) {
+//   console.log(prices[i]);
+// }
+// console.log("*********");
+// prices.forEach((p) => console.log(p));
+// console.log("*********");
+// prices.forEach((p, i) => console.log("Deger:", p, "INDIS:", i));
+// console.log("*********");
 
-let sum = 0;
-prices.forEach((price) => (sum += price));
-console.log("SUM:", sum);
+// let sum = 0;
+// prices.forEach((price) => (sum += price));
+// console.log("SUM:", sum);
+
+let names = ["Mustafa", "Murat", "Ahmet", "Mustafa", "Ayşe", "Canan"];
+
+const upperName = names.map((name) => name.toLocaleUpperCase());
+console.log(upperName);
+console.log(names);
+
+const euro = 21.78;
+const dolar = 19.8;
+const tlPrices = [100, 150, 100, 50, 80];
+const dolarPrices = tlPrices.map((tl) => Number((tl / dolar).toFixed(2)));
+const euroPrices = tlPrices.map((tl) => Number((tl / euro).toFixed(2)));
+
+console.log(dolarPrices);
+console.log(euroPrices);
+console.log(tlPrices);

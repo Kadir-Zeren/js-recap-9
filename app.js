@@ -57,3 +57,8 @@ console.log("*********");
 prices.forEach((p) => console.log(p));
 console.log("*********");
 prices.forEach((p, i) => console.log("Deger:", p, "INDIS:", i));
+console.log("*********");
+
+let sum = 0;
+prices.forEach((price) => (sum += price));
+console.log("SUM:", sum);
